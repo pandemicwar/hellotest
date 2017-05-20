@@ -19,7 +19,7 @@ class hellotest {
 public:
     hellotest();
     hellotest(const string& aWho);
-    hellotest(const& orig);
+  hellotest(const hellotest& orig);
     virtual ~hellotest();
     string message() const;
 private:
