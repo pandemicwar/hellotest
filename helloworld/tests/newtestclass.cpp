@@ -35,5 +35,13 @@ void newtestclass::testMessage() {
     if (true /*check result*/) {
         CPPUNIT_ASSERT(result == "Hello NetBeans");
     }
+    
+}
+void hellotest::testMessageNobody() {
+    hellotest _hellotest;
+    string result = _hellotest.message();
+    if (true /*check result*/) {
+        CPPUNIT_ASSERT(result == "");
+    }
 }
 
