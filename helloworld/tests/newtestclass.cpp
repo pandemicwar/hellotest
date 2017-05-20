@@ -42,7 +42,7 @@ void newtestclass::testMessageNobody() {
     hellotest _hellotest("lots");
     string result = _hellotest.message();
     if (true /*check result*/) {
-        CPPUNIT_ASSERT(result == "");
+        CPPUNIT_ASSERT(result == "stol");
     }
 }
 
