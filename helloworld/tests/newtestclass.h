@@ -20,6 +20,7 @@ class newtestclass : public CPPUNIT_NS::TestFixture {
     CPPUNIT_TEST_SUITE(newtestclass);
 
     CPPUNIT_TEST(testMessage);
+    CPPUNIT_TEST(testMessageNobody);
 
     CPPUNIT_TEST_SUITE_END();
 
@@ -31,6 +32,7 @@ public:
 
 private:
     void testMessage();
+    void testMessageNobody();
 
 };
 
