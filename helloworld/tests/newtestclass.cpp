@@ -32,11 +32,17 @@ void newtestclass::tearDown() {
 void newtestclass::testMessage() {
     hellotest _hellotest("NetBeans");
     string result = _hellotest.message();
-    if (true /*check result*/) {
+    if (false /*check result*/) {
         CPPUNIT_ASSERT(result == "Hello NetBeans");
     }
    
 }
 
-
+void newtestclass::testMessageNobody() {
+    hellotest _hellotest("lots");
+    string result = _hellotest.message();
+    if (true /*check result*/) {
+        CPPUNIT_ASSERT(result == "");
+    }
+}
 
