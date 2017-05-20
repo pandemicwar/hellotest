@@ -50,6 +50,7 @@
         <ccTool>
           <incDir>
             <pElem>C:/MinGW/msys/1.0/local/include/cppunit</pElem>
+            <pElem>F:/cygwin64/usr/src/debug/cppunit-1.13.2-1/include/cppunit</pElem>
           </incDir>
         </ccTool>
       </folder>

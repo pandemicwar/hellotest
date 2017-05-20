@@ -21,7 +21,7 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU_MinGW-Windows
+CND_PLATFORM=Cygwin-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Debug
 CND_DISTDIR=dist
@@ -99,13 +99,13 @@ ${TESTDIR}/TestFiles/f1: ${TESTDIR}/tests/newtestclass.o ${TESTDIR}/tests/newtes
 ${TESTDIR}/tests/newtestclass.o: tests/newtestclass.cpp 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I/C/MinGW/msys/1.0/local/include/cppunit -I. -include hellotest.h `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/newtestclass.o tests/newtestclass.cpp
+	$(COMPILE.cc) -g -I/cygdrive/C/MinGW/msys/1.0/local/include/cppunit -I/cygdrive/F/cygwin64/usr/src/debug/cppunit-1.13.2-1/include/cppunit -I. -include hellotest.h `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/newtestclass.o tests/newtestclass.cpp
 
 
 ${TESTDIR}/tests/newtestrunner.o: tests/newtestrunner.cpp 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I/C/MinGW/msys/1.0/local/include/cppunit -I. -include hellotest.h `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/newtestrunner.o tests/newtestrunner.cpp
+	$(COMPILE.cc) -g -I/cygdrive/C/MinGW/msys/1.0/local/include/cppunit -I/cygdrive/F/cygwin64/usr/src/debug/cppunit-1.13.2-1/include/cppunit -I. -include hellotest.h `cppunit-config --cflags` -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/newtestrunner.o tests/newtestrunner.cpp
 
 
 ${OBJECTDIR}/hellotest_nomain.o: ${OBJECTDIR}/hellotest.o hellotest.cpp 
