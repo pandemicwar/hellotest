@@ -25,5 +25,5 @@ hellotest::~hellotest() {
 
 string hellotest::message() const
 {
-    return (string)"Hello1 " + who;
+    return (string)"HelloHELLO " + who;
 }
