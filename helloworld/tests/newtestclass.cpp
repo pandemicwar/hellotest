@@ -32,7 +32,7 @@ void newtestclass::tearDown() {
 
 
 void newtestclass::testMessageNobody() {
-    hellotest _hellotest;
+    hellotest _hellotest();
     string result = _hellotest.message();
     if (false /*check result*/) {
         CPPUNIT_ASSERT(result == "");
