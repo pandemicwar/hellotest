@@ -38,8 +38,8 @@ void newtestclass::testMessage() {
     
 }
 void newtestclass::testMessageNobody() {
-    hellotest hellotest;
-    string result = hellotest.message();
+    hellotest _hellotest;
+    string result = _hellotest.message();
     if (true /*check result*/) {
         CPPUNIT_ASSERT(result == "");
     }
